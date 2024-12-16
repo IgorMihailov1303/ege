@@ -2,8 +2,6 @@ f = open('1.txt') #открыть файл
 m = f.readlines() #засовывает все строчки файла в массив
 
 with open('1.txt') as f: #нормальный способ чтения фалов без забивания памяти
-    m = f.readline()     #
-    print(m)             #
     for s in f:          #
         s = s.strip()    #
         print(s)         #
